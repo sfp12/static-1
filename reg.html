@@ -18,10 +18,17 @@
       $(function(){
 
         $('#reg').on('click', {}, function(){
-          layer.msg('注册成功，正在跳转到登录页...');
-          setTimeout(function(){
+          layer.alert('注册成功，正在跳转到登录页...', {
+            shadeClose: true,
+            end: function(){
+              location.href = './login.html';
+            }
+          }, function(){
             location.href = './login.html';
-          }, 3000);
+          });
+          // setTimeout(function(){
+          //   location.href = './login.html';
+          // }, 3000);
         })
 
       });
