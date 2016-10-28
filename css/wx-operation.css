@@ -213,7 +213,7 @@ section {
   float: right; }
 
 .no-bg .wrap {
-  padding-top: 92px;
+  padding-top: 48px;
   padding-bottom: 72px;
   text-align: center; }
   .no-bg .wrap .hd {
@@ -318,20 +318,20 @@ section {
       width: 658px;
       height: 58px;
       font-size: 0; }
-      .page-1 .wrap .phone span {
+      .page-1 .wrap .phone .tel {
         color: #fffa66;
         font-size: 36px;
         margin-left: 90px;
         margin-right: 89px;
         line-height: 58px;
         letter-spacing: 3px; }
-      .page-1 .wrap .phone a {
+      .page-1 .wrap .phone .text {
         float: right;
         width: 197px;
         height: 54px;
         line-height: 54px;
         text-align: center;
-        display: block;
+        display: inlineblock;
         background-color: #fff;
         color: #fc7337;
         font-size: 30px;
@@ -567,7 +567,8 @@ section {
   .page-7 .wrap .lists {
     width: 828px;
     margin: 0 auto 0;
-    text-align: left; }
+    text-align: left;
+    margin-top: 56px; }
     .page-7 .wrap .lists .list {
       color: #fff;
       border-top: 1px solid #97e2e0;
@@ -779,6 +780,7 @@ section {
         border-left: 9px solid transparent;
         border-right: 9px solid transparent; }
     .page-9 .wrap .bd h3 {
+      display: none;
       font-weight: normal;
       font-size: 30px;
       color: #fff88a;
@@ -838,7 +840,11 @@ section {
 
 .page-11 {
   background-color: #333;
-  height: 80px; }
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
   .page-11 .pull-left span {
     color: #fefefe;
     font-size: 28px;
@@ -871,7 +877,7 @@ section {
 
 @media (max-width: 640px) {
   .no-bg .wrap .hd span {
-    top: -25px; }
+    /* top: -25px;*/ }
 
   .wrap {
     width: 600px; }
@@ -908,13 +914,17 @@ section {
   .page-1 .wrap .info span {
     font-size: 24px; }
   .page-1 .wrap .phone {
-    width: 100%; }
-    .page-1 .wrap .phone span {
+    width: 100%;
+    font-size: 0; }
+    .page-1 .wrap .phone .tel {
       margin-left: 45px;
-      margin-right: 45px; }
+      margin-right: 45px;
+      float: left;
+      background-color: transparent;
+      color: #fffa66 !important; }
 
   .page-2 {
-    /* display: none;*/ }
+    display: none; }
 
   .page-3 {
     /* display: none;*/
