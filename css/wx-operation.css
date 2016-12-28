@@ -242,7 +242,7 @@ section {
 
 /* wx-o*/
 .page-1 {
-  background: url(../images-wx/page1-bg.jpg) center top no-repeat;
+  background: url(../images/wx/page1-bg.jpg) center top no-repeat;
   height: 600px; }
   .page-1 .wrap {
     padding-top: 105px; }
@@ -362,7 +362,7 @@ section {
     /* font-weight: bold;*/ }
 
 .page-3 {
-  background: url(../images-wx/page3-bg.jpg) center top no-repeat;
+  background: url(../images/wx/page3-bg.jpg) center top no-repeat;
   /* background-color: #0ab7ae;*/
   height: 450px; }
   .page-3 .wrap .bd {
@@ -415,7 +415,7 @@ section {
           color: #272727; }
 
 .page-5 {
-  background: url(../images-wx/page5-bg.png) center top no-repeat;
+  background: url(../images/wx/page5-bg.png) center top no-repeat;
   height: 650px; }
   .page-5 .wrap .hd span {
     background-color: #00adae; }
@@ -428,7 +428,7 @@ section {
       margin-bottom: 32px; }
     .page-5 .wrap .bd .person {
       width: 1013px;
-      background-image: url(../images-wx/page5-rect.png);
+      background-image: url(../images/wx/page5-rect.png);
       height: 118px;
       padding-top: 21px;
       padding-left: 20px;
@@ -749,7 +749,7 @@ section {
         left: 134px; }
 
 .page-9 {
-  background: url(../images-wx/page9-bg.jpg) center top no-repeat;
+  background: url(../images/wx/page9-bg.jpg) center top no-repeat;
   /* background-color: #0ab7ae;*/
   height: 640px; }
   .page-9 .wrap .bd {
