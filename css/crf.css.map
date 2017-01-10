@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,MAAO;EACL,UAAU,EAAE,eAAe;;AAG7B,CAAC;EACC,OAAO,EAAE,KAAK",
-"sources": ["crf.scss"],
-"names": [],
-"file": "crf.css"
-}
