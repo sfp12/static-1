@@ -1,0 +1,28 @@
+@charset "UTF-8";
+body {
+  padding-bottom: 20px; }
+
+.container {
+  margin-top: 20px; }
+  .container .panel-title a {
+    text-decoration: none; }
+    .container .panel-title a:hover {
+      text-decoration: none; }
+  .container .panel-collapse a {
+    display: block; }
+  .container .panel-collapse .link a {
+    display: inline; }
+  .container .panel-collapse .link .online {
+    margin-left: 20px; }
+
+/* 截图*/
+.carousel-indicators li {
+  border: 1px solid steelblue; }
+.carousel-indicators .active {
+  background-color: steelblue; }
+
+.detail .content span {
+  display: block;
+  text-indent: 2em; }
+
+/*# sourceMappingURL=index.css.map */

@@ -2,25 +2,39 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>标签页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>作品</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <style>
-      .con{
+      /*.con{
         width: 300px;
         margin: 0 auto;
         margin-top: 20px;
       }
       a{
         display: block;
-      }
+      }*/
     </style>
   </head>
   <body>
-    <div class="con">
+    <!-- <div class="con">
       <a href='centuries-20.html'>多重视角透视20世纪的世界</a>
       <a href='wx-operation.html'>微信运营管理师(适配移动端)</a>
       <a href='shuangchuang.html'>双创学堂</a>
@@ -28,8 +42,77 @@
       <a href='online-marketing.html'>网络营销课程专题页(适配移动端)</a>
       <a href='sc_master.html'>创新创业硕士网页(适配移动端)</a>
       <a href='young-leader.html'>美国青年领袖加速营(适配移动端)</a>
+    </div> -->
+
+    <div class="container">
+      <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                PC端
+              </a>
+            </h4>
+          </div>
+          <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+              <a href='pc-young-leader.html' target='_blank'>美国青年领袖加速营(适配移动端)</a>
+              <a href='pc-sc-master.html' target='_blank'>创新创业硕士网页(适配移动端)</a>
+              <a href='pc-online-marketing.html' target='_blank'>网络营销课程专题页(适配移动端)</a>
+              <a href='pc-hk-xt.html' target='_blank'>航空学堂</a>             
+              <a href='pc-shuangchuang.html' target='_blank'>双创学堂</a>
+              <a href='pc-wx-operation.html' target='_blank'>微信运营管理师(适配移动端)</a>
+              <a href='pc-centuries-20.html' target='_blank'>多重视角透视20世纪的世界</a>
+              <a href='pc-medical-analysis.html' target='_blank'>医疗数据分析(截图)</a>
+              <a href='pc-besturbo.html' target='_blank'>企业论坛整站(截图)</a>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingTwo">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                移动端
+              </a>
+            </h4>
+          </div>
+          <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+            <div class="panel-body">
+              <div class="link">
+                <a href='mobile-exam.html' target='_blank'>
+                  中华考试网(截图)
+                </a>
+                <a href='http://zhksw.api.m.topu.com/web/html/index.html' target='_blank' class='online'>
+                  在线地址
+                </a>
+              </div>
+              <!-- <div class="link">
+                运营页
+              </div>
+              <div class="link">
+                移动端改版
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading" role="tab" id="headingThree">
+            <h4 class="panel-title">
+              <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                nodejs
+              </a>
+            </h4>
+          </div>
+          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+            <div class="panel-body">
+              
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     
-
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -1,0 +1,555 @@
+@charset "utf-8";
+
+/* reset*/
+@import "../../_normalize";
+
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; /* 1*/
+    display: table; /* 2*/
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  /* IE8 filter*/
+  $opacity-ie: ($opacity * 100);
+  filter: alpha(opacity=$opacity-ie);
+}
+
+/* commom*/
+body {
+  font-family: '微软雅黑';
+}
+ul {
+  padding-left: 0;
+  margin: 0
+}
+p {
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+h1,
+h2 {
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+section {
+  /* min-width: 1000px;*/
+}
+.wrap {
+  width: 1000px;
+  margin: 0 auto;
+}
+.pull-left{
+  float:left;
+}
+.pull-right{
+  float:right;
+}
+
+section{
+  height: 100%;
+}
+
+.page{
+  .wrap{
+    padding-top: 100px;
+    height: 100%;
+    h1{
+      text-align: center;
+      font-size: 48px;
+      color: #fff;
+      span{
+        display: inline-block;
+        width: 42px;
+      }
+    }
+  }
+}
+
+/* hangkong xuetang */
+.page-1 {
+  background: url(../../../images/pc/hk-xt/page1-bg.jpg) center top no-repeat;
+  background-size: cover;
+  .wrap{
+    height: 100%;
+    position:relative;
+    .img-wrap{
+      .logo{
+        margin-top: 15px;
+      }
+      .h2{
+        margin-left: 72px;
+        margin-top: 3vh;
+      }
+      .h1{
+        margin-top: 15px;
+      }
+    }    
+    .text-right{
+      text-align: right;
+    }
+    .text-1{
+      margin-top: 200px;
+      position: absolute;
+      bottom: 31vh;
+      right: 43px;
+    }
+    .text-2{
+      margin-top: 20px;
+      position: absolute;
+      bottom: 20vh;
+      right: 56px;
+    }
+  }
+}
+
+.page-2{
+  background: url(../../../images/pc/hk-xt/page2-bg.jpg) center top no-repeat;
+}
+
+.page-3{
+  background: url(../../../images/pc/hk-xt/page3-bg.jpg) center top no-repeat;
+  .wrap{
+    .img-wrap{
+      img{
+
+      }
+    }
+    .list{
+      font-size: 0;
+      margin-top: 96px;
+      .item{
+        position: relative;
+        width: 240px;
+        height:390px;
+        display: inline-block;
+        margin-right: 13px;
+        float:left;
+        border-radius: 5px;
+        .opacity{
+          width: 100%;
+          height: 66px;
+          background-color: #ffa300;
+          @include opacity(.85);
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+        .content{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          height: 66px;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+          box-sizing: border-box;
+          span{
+            font-size: 30px;
+            color: #fff;
+            line-height: 66px;
+            float:left;
+          }
+          img{
+            margin-top: 18px;
+            float: left;
+          }
+        }
+        &:hover{
+          /* -webkit-transition:background-size 1s ease-in-out; */
+          /* -moz-transition:background-size 1s ease-in-out; */
+          /* -o-transition:background-size 1s ease-in-out;*/
+          /* -webkit-transform:scale(1.1); */
+          /* -moz-transform:scale(1.1); */
+          /* -o-transform:scale(1.1); */
+          /* background-size: 115%; */
+        }
+      }
+      .item-1{
+        background: url(../../../images/pc/hk-xt/page3-1.png) center center no-repeat;
+        background-size: 100%;
+        margin-top: 46px;
+        .content{
+          padding-left: 13px;
+          box-sizing: border-box;
+        }
+      }
+      .item-2{
+        background: url(../../../images/pc/hk-xt/page3-2.png) center center no-repeat;
+        background-size: 100%;
+        .content{
+          padding-left: 43px;
+        }
+      }
+      .item-3{
+        background: url(../../../images/pc/hk-xt/page3-3.png) center center no-repeat;
+        background-size: 100%;
+        margin-top: 46px;
+        .content{
+          padding-left: 28px;
+        }
+      }
+      .item-4{
+        background: url(../../../images/pc/hk-xt/page3-4.png) center center no-repeat;
+        background-size: 100%;
+        margin-right: 0;
+        .content{
+          padding-left: 58px;
+        }
+      }
+      .active{
+        -webkit-transform: scale(1.1);
+                transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.page-4{
+  background: url(../../../images/pc/hk-xt/page4-bg.jpg) center top no-repeat;
+  background-size: initial !important;
+  .wrap{
+    .list{
+      font-size: 0;
+      width: 1080px;
+      overflow: hidden;
+      margin-top: 12vh;
+      .item{
+        width: 190px;
+        margin-right: 80px;
+        display: inline-block;
+        p{
+          text-align: center;
+          color: #1863be;
+          font-size: 30px;
+          line-height: 36px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+.page-5{
+  background: url(../../../images/pc/hk-xt/page5-bg.jpg) center top no-repeat;
+  .wrap{
+    
+    .main{
+      padding-top: 30px;
+      > div{
+        border: 1px solid #dfe9f3;
+        width: 1040px;
+        margin-left: -21px;
+        position: relative;
+        border-radius: 5px;
+        .opacity{
+          @include opacity(.15);
+          width: 100%;
+          height: 100%;
+          background-color: #fff;
+        }
+      }
+      .img-wrap{
+        height: 310px;
+        .list{
+          padding-left: 20px;
+          font-size: 0;
+          width: 1020px;
+          overflow: hidden;
+          position: absolute;
+          top: 10px;
+          left: 0;
+          .item{
+            width: 320px;
+            text-align: center;
+            margin-right: 20px;
+            display: inline-block;
+            img{
+              
+            }
+            span{
+              display: inline-block;
+              color: #ffa200;
+              font-size: 22px;
+              line-height: 32px;
+              height: 32px;
+              border-radius: 15px;
+              background-color: #fff;
+              padding: 0 50px;
+              margin-top: -16px;
+              i{
+                font-size: 14px;
+                font-style: normal;
+              }
+            }
+            p{
+              text-align: center;
+              font-size: 18px;
+              line-height: 24px;
+              color: #fff;
+              margin-top: 10px;
+            }
+            &:nth-child(3n){
+              span{
+                color:#7d7d7d;
+                padding: 0 24px;
+              }
+            }
+          }
+        }
+      }
+      .shares{
+        height: 194px;
+        margin-top: 10px;
+        text-align: center;
+        .content{
+          width: 1000px;
+          margin: 0 auto;
+          position: absolute;
+          top: 0;
+          padding-left: 20px;
+          .text{
+            height: 16px;
+            position: relative;
+            border-top: 1px solid #fff;
+            width: 855px;
+            margin:12px auto;
+            margin-top: 28px;
+            span{
+              color: #ffa200;
+              font-size: 22px;
+              line-height: 32px;
+              display: inline-block;
+              height: 32px;
+              border-radius: 15px;
+              background-color: #fff;
+              position: absolute;
+              top: -16px;
+              left: 50%;
+              margin-left: -169px;
+              padding: 0 15px;
+            }
+          }
+          .list{
+            font-size: 0;
+            width: 860px;
+            margin: 0 auto;
+            .item{
+              margin-right: 76px;
+              display: inline-block;
+              img{
+                width: 80px;
+              }
+              &:last-child{
+                margin-right: 0;
+              }
+            }
+          }
+        }        
+      }
+    }
+  }
+}
+
+.page-6{
+  background: url(../../../images/pc/hk-xt/page6-bg.jpg) center top no-repeat;
+  .wrap{
+    .list{
+      font-size: 0;
+      height: 220px;
+      width: 100%;
+      margin-top: 50px;
+      .item{
+        display: inline-block;
+        width: 250px;
+        margin-top: 100px;
+        float:left;
+        .img-wrap{
+          /* display: none;*/
+          img{
+            float:left;
+          }
+          span{
+            color: #fff;
+            font-size: 30px;
+            line-height: 119px;
+            margin-left: 10px;
+            float: left;
+          }
+        }
+        .text-wrap{
+          display: none;
+          h2{
+            background: url(../../../images/pc/hk-xt/page6-7.png) 0 6px no-repeat;
+            font-weight: normal;
+            color: #ffa200;
+            font-size: 24px;
+            padding-left: 24px;
+          }
+          p{
+            margin-top: 10px;
+            font-size: 18px;
+            color: #fff;
+            line-height: 30px;
+          }
+        }
+        &:nth-child(2n){
+          margin-top: 0;
+        }
+      }
+      .item-1{
+        width: 252px;
+      }
+      .item-2{
+        width: 248px;
+      }
+    }
+    .recommend{
+      height: 194px;
+      margin-top: 80px;
+      text-align: center;
+      border: 1px solid #dfe9f3;
+      width: 1040px;
+      margin-left: -21px;
+      position: relative;
+      border-radius: 5px;
+      .opacity{
+        @include opacity(.15);
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+      }
+      .content{
+        width: 1000px;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        padding-left: 20px;
+        .text{
+          height: 16px;
+          position: relative;
+          width: 855px;
+          margin:12px auto;
+          margin-top: 28px;
+          .line{
+            border-top: 1px solid #fff;
+            display: inline-block;
+            width: 357px;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+          .line-1{
+            left:497px;
+          }
+          span{
+            color: #fff;
+            font-size: 22px;
+            line-height: 32px;
+            display: inline-block;
+            height: 32px;
+            position: absolute;
+            top: -16px;
+            padding: 0 15px;
+            left: 357px;
+          }
+        }
+      }        
+    }
+  }
+}
+
+.page-7{
+  background: url(../../../images/pc/hk-xt/page7-bg.jpg) center top no-repeat;
+  .wrap{
+    .list{
+      margin-top: 70px;
+      font-size: 0;
+      display: -webkit-flex;
+      -webkit-flex-wrap: wrap;
+      .item{
+        width: 250px;
+        height: 172px;
+        display: -webkit-flex;
+      }
+      .item-5{
+        background-image: url(../../../images/pc/hk-xt/page7-5.jpg);
+        font-size: 24px;
+        color: #fff;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        p{
+          display: -webkit-flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          text-align: center;
+        }
+      }
+      .item-1{
+        background-image: url(../../../images/pc/hk-xt/page7-1.jpg);
+      }
+      .item-2{
+        background-image: url(../../../images/pc/hk-xt/page7-2.jpg);
+      }
+      .item-3{
+        background-image: url(../../../images/pc/hk-xt/page7-3.jpg);
+      }
+      .item-4{
+        background-image: url(../../../images/pc/hk-xt/page7-4.jpg);
+      }
+    }
+    footer{
+      margin-top: 80px;
+      p{
+        text-align: center;
+        font-size: 12px;
+        line-height: 30px;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.page{
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

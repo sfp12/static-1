@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+body{
+	padding-bottom: 20px;
+}
+
+.container{
+	margin-top: 20px;
+	.panel-title{
+		a{
+			text-decoration: none;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+	}
+	.panel-collapse{
+		a{
+			display: block;			
+
+		}
+		.link{
+			a{
+				display: inline;
+			}
+			.online{
+				margin-left: 20px;
+			}
+		}
+
+	}
+}
+
+/* 截图*/
+.carousel-indicators{
+	li{
+		border: 1px solid steelblue;
+	}
+	.active{
+		background-color: steelblue;
+	}	
+}
+
+.detail{
+	.content{
+		span{
+			display: block;
+			text-indent: 2em;
+		}		
+	}
+}

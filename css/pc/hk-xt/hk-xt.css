@@ -1,0 +1,584 @@
+@charset "UTF-8";
+/* reset*/
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden],
+template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/* commom*/
+body {
+  font-family: '微软雅黑'; }
+
+ul {
+  padding-left: 0;
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+h1,
+h2 {
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+section {
+  /* min-width: 1000px;*/ }
+
+.wrap {
+  width: 1000px;
+  margin: 0 auto; }
+
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+section {
+  height: 100%; }
+
+.page .wrap {
+  padding-top: 100px;
+  height: 100%; }
+  .page .wrap h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #fff; }
+    .page .wrap h1 span {
+      display: inline-block;
+      width: 42px; }
+
+/* hangkong xuetang */
+.page-1 {
+  background: url(../../../images/pc/hk-xt/page1-bg.jpg) center top no-repeat;
+  background-size: cover; }
+  .page-1 .wrap {
+    height: 100%;
+    position: relative; }
+    .page-1 .wrap .img-wrap .logo {
+      margin-top: 15px; }
+    .page-1 .wrap .img-wrap .h2 {
+      margin-left: 72px;
+      margin-top: 3vh; }
+    .page-1 .wrap .img-wrap .h1 {
+      margin-top: 15px; }
+    .page-1 .wrap .text-right {
+      text-align: right; }
+    .page-1 .wrap .text-1 {
+      margin-top: 200px;
+      position: absolute;
+      bottom: 31vh;
+      right: 43px; }
+    .page-1 .wrap .text-2 {
+      margin-top: 20px;
+      position: absolute;
+      bottom: 20vh;
+      right: 56px; }
+
+.page-2 {
+  background: url(../../../images/pc/hk-xt/page2-bg.jpg) center top no-repeat; }
+
+.page-3 {
+  background: url(../../../images/pc/hk-xt/page3-bg.jpg) center top no-repeat; }
+  .page-3 .wrap .list {
+    font-size: 0;
+    margin-top: 96px; }
+    .page-3 .wrap .list .item {
+      position: relative;
+      width: 240px;
+      height: 390px;
+      display: inline-block;
+      margin-right: 13px;
+      float: left;
+      border-radius: 5px; }
+      .page-3 .wrap .list .item .opacity {
+        width: 100%;
+        height: 66px;
+        background-color: #ffa300;
+        opacity: 0.85;
+        /* IE8 filter*/
+        filter: alpha(opacity=85);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px; }
+      .page-3 .wrap .list .item .content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 66px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        box-sizing: border-box; }
+        .page-3 .wrap .list .item .content span {
+          font-size: 30px;
+          color: #fff;
+          line-height: 66px;
+          float: left; }
+        .page-3 .wrap .list .item .content img {
+          margin-top: 18px;
+          float: left; }
+      .page-3 .wrap .list .item:hover {
+        /* -webkit-transition:background-size 1s ease-in-out; */
+        /* -moz-transition:background-size 1s ease-in-out; */
+        /* -o-transition:background-size 1s ease-in-out;*/
+        /* -webkit-transform:scale(1.1); */
+        /* -moz-transform:scale(1.1); */
+        /* -o-transform:scale(1.1); */
+        /* background-size: 115%; */ }
+    .page-3 .wrap .list .item-1 {
+      background: url(../../../images/pc/hk-xt/page3-1.png) center center no-repeat;
+      background-size: 100%;
+      margin-top: 46px; }
+      .page-3 .wrap .list .item-1 .content {
+        padding-left: 13px;
+        box-sizing: border-box; }
+    .page-3 .wrap .list .item-2 {
+      background: url(../../../images/pc/hk-xt/page3-2.png) center center no-repeat;
+      background-size: 100%; }
+      .page-3 .wrap .list .item-2 .content {
+        padding-left: 43px; }
+    .page-3 .wrap .list .item-3 {
+      background: url(../../../images/pc/hk-xt/page3-3.png) center center no-repeat;
+      background-size: 100%;
+      margin-top: 46px; }
+      .page-3 .wrap .list .item-3 .content {
+        padding-left: 28px; }
+    .page-3 .wrap .list .item-4 {
+      background: url(../../../images/pc/hk-xt/page3-4.png) center center no-repeat;
+      background-size: 100%;
+      margin-right: 0; }
+      .page-3 .wrap .list .item-4 .content {
+        padding-left: 58px; }
+    .page-3 .wrap .list .active {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1); }
+
+.page-4 {
+  background: url(../../../images/pc/hk-xt/page4-bg.jpg) center top no-repeat;
+  background-size: initial !important; }
+  .page-4 .wrap .list {
+    font-size: 0;
+    width: 1080px;
+    overflow: hidden;
+    margin-top: 12vh; }
+    .page-4 .wrap .list .item {
+      width: 190px;
+      margin-right: 80px;
+      display: inline-block; }
+      .page-4 .wrap .list .item p {
+        text-align: center;
+        color: #1863be;
+        font-size: 30px;
+        line-height: 36px;
+        margin-top: 5px; }
+
+.page-5 {
+  background: url(../../../images/pc/hk-xt/page5-bg.jpg) center top no-repeat; }
+  .page-5 .wrap .main {
+    padding-top: 30px; }
+    .page-5 .wrap .main > div {
+      border: 1px solid #dfe9f3;
+      width: 1040px;
+      margin-left: -21px;
+      position: relative;
+      border-radius: 5px; }
+      .page-5 .wrap .main > div .opacity {
+        opacity: 0.15;
+        /* IE8 filter*/
+        filter: alpha(opacity=15);
+        width: 100%;
+        height: 100%;
+        background-color: #fff; }
+    .page-5 .wrap .main .img-wrap {
+      height: 310px; }
+      .page-5 .wrap .main .img-wrap .list {
+        padding-left: 20px;
+        font-size: 0;
+        width: 1020px;
+        overflow: hidden;
+        position: absolute;
+        top: 10px;
+        left: 0; }
+        .page-5 .wrap .main .img-wrap .list .item {
+          width: 320px;
+          text-align: center;
+          margin-right: 20px;
+          display: inline-block; }
+          .page-5 .wrap .main .img-wrap .list .item span {
+            display: inline-block;
+            color: #ffa200;
+            font-size: 22px;
+            line-height: 32px;
+            height: 32px;
+            border-radius: 15px;
+            background-color: #fff;
+            padding: 0 50px;
+            margin-top: -16px; }
+            .page-5 .wrap .main .img-wrap .list .item span i {
+              font-size: 14px;
+              font-style: normal; }
+          .page-5 .wrap .main .img-wrap .list .item p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 24px;
+            color: #fff;
+            margin-top: 10px; }
+          .page-5 .wrap .main .img-wrap .list .item:nth-child(3n) span {
+            color: #7d7d7d;
+            padding: 0 24px; }
+    .page-5 .wrap .main .shares {
+      height: 194px;
+      margin-top: 10px;
+      text-align: center; }
+      .page-5 .wrap .main .shares .content {
+        width: 1000px;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        padding-left: 20px; }
+        .page-5 .wrap .main .shares .content .text {
+          height: 16px;
+          position: relative;
+          border-top: 1px solid #fff;
+          width: 855px;
+          margin: 12px auto;
+          margin-top: 28px; }
+          .page-5 .wrap .main .shares .content .text span {
+            color: #ffa200;
+            font-size: 22px;
+            line-height: 32px;
+            display: inline-block;
+            height: 32px;
+            border-radius: 15px;
+            background-color: #fff;
+            position: absolute;
+            top: -16px;
+            left: 50%;
+            margin-left: -169px;
+            padding: 0 15px; }
+        .page-5 .wrap .main .shares .content .list {
+          font-size: 0;
+          width: 860px;
+          margin: 0 auto; }
+          .page-5 .wrap .main .shares .content .list .item {
+            margin-right: 76px;
+            display: inline-block; }
+            .page-5 .wrap .main .shares .content .list .item img {
+              width: 80px; }
+            .page-5 .wrap .main .shares .content .list .item:last-child {
+              margin-right: 0; }
+
+.page-6 {
+  background: url(../../../images/pc/hk-xt/page6-bg.jpg) center top no-repeat; }
+  .page-6 .wrap .list {
+    font-size: 0;
+    height: 220px;
+    width: 100%;
+    margin-top: 50px; }
+    .page-6 .wrap .list .item {
+      display: inline-block;
+      width: 250px;
+      margin-top: 100px;
+      float: left; }
+      .page-6 .wrap .list .item .img-wrap {
+        /* display: none;*/ }
+        .page-6 .wrap .list .item .img-wrap img {
+          float: left; }
+        .page-6 .wrap .list .item .img-wrap span {
+          color: #fff;
+          font-size: 30px;
+          line-height: 119px;
+          margin-left: 10px;
+          float: left; }
+      .page-6 .wrap .list .item .text-wrap {
+        display: none; }
+        .page-6 .wrap .list .item .text-wrap h2 {
+          background: url(../../../images/pc/hk-xt/page6-7.png) 0 6px no-repeat;
+          font-weight: normal;
+          color: #ffa200;
+          font-size: 24px;
+          padding-left: 24px; }
+        .page-6 .wrap .list .item .text-wrap p {
+          margin-top: 10px;
+          font-size: 18px;
+          color: #fff;
+          line-height: 30px; }
+      .page-6 .wrap .list .item:nth-child(2n) {
+        margin-top: 0; }
+    .page-6 .wrap .list .item-1 {
+      width: 252px; }
+    .page-6 .wrap .list .item-2 {
+      width: 248px; }
+  .page-6 .wrap .recommend {
+    height: 194px;
+    margin-top: 80px;
+    text-align: center;
+    border: 1px solid #dfe9f3;
+    width: 1040px;
+    margin-left: -21px;
+    position: relative;
+    border-radius: 5px; }
+    .page-6 .wrap .recommend .opacity {
+      opacity: 0.15;
+      /* IE8 filter*/
+      filter: alpha(opacity=15);
+      width: 100%;
+      height: 100%;
+      background-color: #fff; }
+    .page-6 .wrap .recommend .content {
+      width: 1000px;
+      margin: 0 auto;
+      position: absolute;
+      top: 0;
+      padding-left: 20px; }
+      .page-6 .wrap .recommend .content .text {
+        height: 16px;
+        position: relative;
+        width: 855px;
+        margin: 12px auto;
+        margin-top: 28px; }
+        .page-6 .wrap .recommend .content .text .line {
+          border-top: 1px solid #fff;
+          display: inline-block;
+          width: 357px;
+          position: absolute;
+          top: 0;
+          left: 0; }
+        .page-6 .wrap .recommend .content .text .line-1 {
+          left: 497px; }
+        .page-6 .wrap .recommend .content .text span {
+          color: #fff;
+          font-size: 22px;
+          line-height: 32px;
+          display: inline-block;
+          height: 32px;
+          position: absolute;
+          top: -16px;
+          padding: 0 15px;
+          left: 357px; }
+
+.page-7 {
+  background: url(../../../images/pc/hk-xt/page7-bg.jpg) center top no-repeat; }
+  .page-7 .wrap .list {
+    margin-top: 70px;
+    font-size: 0;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap; }
+    .page-7 .wrap .list .item {
+      width: 250px;
+      height: 172px;
+      display: -webkit-flex; }
+    .page-7 .wrap .list .item-5 {
+      background-image: url(../../../images/pc/hk-xt/page7-5.jpg);
+      font-size: 24px;
+      color: #fff;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .page-7 .wrap .list .item-5 p {
+        display: -webkit-flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center; }
+    .page-7 .wrap .list .item-1 {
+      background-image: url(../../../images/pc/hk-xt/page7-1.jpg); }
+    .page-7 .wrap .list .item-2 {
+      background-image: url(../../../images/pc/hk-xt/page7-2.jpg); }
+    .page-7 .wrap .list .item-3 {
+      background-image: url(../../../images/pc/hk-xt/page7-3.jpg); }
+    .page-7 .wrap .list .item-4 {
+      background-image: url(../../../images/pc/hk-xt/page7-4.jpg); }
+  .page-7 .wrap footer {
+    margin-top: 80px; }
+    .page-7 .wrap footer p {
+      text-align: center;
+      font-size: 12px;
+      line-height: 30px;
+      color: #fff; }
+
+.page {
+  background-size: cover; }
+
+/*# sourceMappingURL=hk-xt.css.map */
