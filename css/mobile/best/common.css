@@ -281,7 +281,7 @@ div#del-modal .modal-footer {
           height: 8px;
           padding: 0px;
           margin-top: 12px;
-          background-image: url(../../../images/mobile/best/icon.png);
+          background-image: url(../images/icon.png);
           background-position: 0 -222px;
           overflow: hidden; }
         .header .t-div-box .t-r-box .head-list-wrap .t-u-list {
@@ -1004,31 +1004,45 @@ div#del-modal .modal-footer {
   display: none; }
 
 @media (max-width: 480px) {
-  .header .t-div-box {
-    display: none; }
-  .header > .t-u-list {
-    padding-left: 0; }
-    .header > .t-u-list li {
-      height: 30px;
-      text-align: right;
-      border-bottom: 1px solid #ccc; }
-      .header > .t-u-list li a {
-        color: #337ab7;
-        font-size: 16px; }
-  .header > .nav-tabs-justified {
-    padding-left: 0; }
-    .header > .nav-tabs-justified li {
-      text-align: left; }
-      .header > .nav-tabs-justified li a {
-        color: #337ab7;
-        font-size: 16px; }
-        .header > .nav-tabs-justified li a .submenu {
-          padding-left: 0; }
-          .header > .nav-tabs-justified li a .submenu li a {
-            color: #337ab7;
-            font-size: 16px; }
-    .header > .nav-tabs-justified .menuitem > span {
-      width: 100%; }
+  .header {
+    position: relative; }
+    .header .t-div-box {
+      display: none; }
+    .header > .t-u-list {
+      padding-left: 0;
+      position: absolute;
+      top: 48px;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      z-index: 10; }
+      .header > .t-u-list li {
+        height: 30px;
+        text-align: right;
+        border-bottom: 1px solid #ccc; }
+        .header > .t-u-list li a {
+          color: #337ab7;
+          font-size: 16px; }
+    .header > .nav-tabs-justified {
+      padding-left: 0;
+      position: absolute;
+      top: 48px;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      z-index: 10; }
+      .header > .nav-tabs-justified li {
+        text-align: left; }
+        .header > .nav-tabs-justified li a {
+          color: #337ab7;
+          font-size: 16px; }
+          .header > .nav-tabs-justified li a .submenu {
+            padding-left: 0; }
+            .header > .nav-tabs-justified li a .submenu li a {
+              color: #337ab7;
+              font-size: 16px; }
+      .header > .nav-tabs-justified .menuitem > span {
+        width: 100%; }
 
   .expert-detail .nav-list {
     display: none; }
@@ -1092,6 +1106,8 @@ div#del-modal .modal-footer {
         width: 18px;
         height: 8px;
         padding: 0px;
-        background-image: url(../../../images/mobile/best/icon.png);
+        background-image: url(../images/icon.png);
         background-position: 0 -222px;
         overflow: hidden; } }
+
+/*# sourceMappingURL=common.css.map */
