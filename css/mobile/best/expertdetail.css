@@ -1,0 +1,88 @@
+/* version power*/
+/*$orange : #dc781d;*/
+/*$blue   : #005549*/
+.expert-detail .form-wrap {
+  padding: 0; }
+
+.expert-detail .statistics {
+  margin-top: 10px; }
+  .expert-detail .statistics div {
+    display: inline-block;
+    border-right: 1px solid #e6e6e6;
+    width: 14.1%;
+    text-align: center;
+    float: left; }
+    .expert-detail .statistics div p {
+      color: #6b6969;
+      font-size: 16px; }
+    .expert-detail .statistics div p:nth-child(2) {
+      color: #fa8639; }
+  .expert-detail .statistics div.last {
+    border-right: none; }
+
+.expert-detail .skills .item {
+  cursor: pointer; }
+  .expert-detail .skills .item h2 {
+    font-size: 14px;
+    color: #6b6969;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding-left: 0;
+    margin-left: 0 !important; }
+  .expert-detail .skills .item #create-list {
+    margin-left: 0 !important; }
+
+.expert-detail .skills .selected h2,
+.expert-detail .skills .selected ul {
+  display: block;
+  margin-left: 15px; }
+
+.expert-detail .skills ul {
+  display: inline-block;
+  padding-left: 0;
+  margin: 0;
+  padding-top: 5px; }
+  .expert-detail .skills ul li {
+    float: left;
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 6px;
+    padding: 0 6px;
+    font-size: 14px;
+    color: #1387e9; }
+
+.expert-detail .skills ul.li-wrap li.disabled {
+  color: silver; }
+
+.expert-detail .skills #create-list li {
+  background-color: #dae0e5;
+  font-size: 14px;
+  border-radius: 4px;
+  margin: 6px 6px 6px 0;
+  padding: 0 10px;
+  height: 35px;
+  line-height: 35px;
+  color: #6b6969; }
+  .expert-detail .skills #create-list li i {
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    font-style: normal;
+    text-align: right; }
+
+.expert-detail .skills #create-list li:hover {
+  background-color: #1387e9;
+  color: #f8ff36; }
+
+.expert-detail .profile {
+  margin-bottom: 20px; }
+  .expert-detail .profile h3 {
+    font-size: 16px;
+    color: #6b6969; }
+  .expert-detail .profile textarea {
+    background-color: white; }
