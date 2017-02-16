@@ -1003,7 +1003,14 @@ div#del-modal .modal-footer {
 .header .t-u-list {
   display: none; }
 
-@media (max-width: 480px) {
+.nav-con {
+  display: none; }
+
+.footer-mobile {
+  height: 0;
+  overflow: hidden; }
+
+@media (max-width: 768px) {
   .header {
     position: relative; }
     .header .t-div-box {
@@ -1012,37 +1019,84 @@ div#del-modal .modal-footer {
       padding-left: 0;
       position: absolute;
       top: 48px;
-      left: 0;
       right: 0;
       background-color: #fff;
-      z-index: 10; }
+      z-index: 10;
+      margin-bottom: 0;
+      box-shadow: 0px 0px 20px #ccc; }
       .header > .t-u-list li {
         height: 30px;
         text-align: right;
         border-bottom: 1px solid #ccc; }
         .header > .t-u-list li a {
           color: #337ab7;
-          font-size: 16px; }
+          font-size: 14px;
+          padding: 0 15px;
+          line-height: 30px; }
+      .header > .t-u-list:before {
+        content: "";
+        position: absolute;
+        right: 33px;
+        top: -10px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-bottom: 10px solid white;
+        border-right: 5px solid transparent; }
     .header > .nav-tabs-justified {
       padding-left: 0;
       position: absolute;
       top: 48px;
       left: 0;
-      right: 0;
       background-color: #fff;
-      z-index: 10; }
+      z-index: 10;
+      margin-bottom: 0;
+      box-shadow: 0px 0px 20px #ccc;
+      padding: 10px;
+      width: 140px; }
+      .header > .nav-tabs-justified:before {
+        content: "";
+        position: absolute;
+        left: 13px;
+        top: -10px;
+        width: 0;
+        height: 0;
+        border-left: 5px solid transparent;
+        border-bottom: 10px solid white;
+        border-right: 5px solid transparent; }
       .header > .nav-tabs-justified li {
         text-align: left; }
         .header > .nav-tabs-justified li a {
           color: #337ab7;
-          font-size: 16px; }
+          font-size: 14px; }
           .header > .nav-tabs-justified li a .submenu {
             padding-left: 0; }
             .header > .nav-tabs-justified li a .submenu li a {
               color: #337ab7;
-              font-size: 16px; }
+              font-size: 14px; }
       .header > .nav-tabs-justified .menuitem > span {
         width: 100%; }
+
+  .nav-con {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-bottom: 0;
+    background-color: #1387e9;
+    height: 30px;
+    border-radius: 5px; }
+    .nav-con .item {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+      .nav-con .item a {
+        line-height: 30px; }
+    .nav-con li img {
+      margin-top: 3px; }
 
   .expert-detail .nav-list {
     display: none; }
@@ -1101,13 +1155,38 @@ div#del-modal .modal-footer {
       align-items: center; }
       .mobile-header-con .user-con span {
         color: white; }
+      .mobile-header-con .user-con .user-name {
+        padding: 0 2px;
+        display: inline-block;
+        max-width: 54px;
+        overflow: hidden; }
       .mobile-header-con .user-con .icon-19 {
         display: inline-block;
-        width: 18px;
-        height: 8px;
+        width: 14px;
+        height: 6px;
         padding: 0px;
         background-image: url(../images/icon.png);
-        background-position: 0 -222px;
-        overflow: hidden; } }
+        background-position: -2px -224px;
+        overflow: hidden; }
 
-/*# sourceMappingURL=common.css.map */
+  .footer-pc {
+    height: 0;
+    overflow: hidden; }
+
+  .footer-mobile {
+    height: initial;
+    text-align: center;
+    background-color: #1387e9; }
+    .footer-mobile .wrap {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      .footer-mobile .wrap p {
+        margin-bottom: 0;
+        margin-top: 10px; }
+        .footer-mobile .wrap p:last-child {
+          margin-bottom: 10px; } }
+
+/*# sourceMappingURL=to.css.map */
