@@ -1094,7 +1094,8 @@ div#del-modal .modal-footer {
       -ms-flex: 1;
       flex: 1; }
       .nav-con .item a {
-        line-height: 30px; }
+        line-height: 30px;
+        font-size: 16px; }
     .nav-con li img {
       margin-top: 3px; }
 
@@ -1144,6 +1145,7 @@ div#del-modal .modal-footer {
     .mobile-header-con .user-con {
       background-color: #1387e9;
       width: 30%;
+      border-radius: 2px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -1159,7 +1161,8 @@ div#del-modal .modal-footer {
         padding: 0 2px;
         display: inline-block;
         max-width: 54px;
-        overflow: hidden; }
+        overflow: hidden;
+        font-size: 16px; }
       .mobile-header-con .user-con .icon-19 {
         display: inline-block;
         width: 14px;
