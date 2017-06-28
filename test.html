@@ -10,6 +10,10 @@
     <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
 
     <script>
+        // 根据id secret获取access token
+        // 根据access token 获取 jsapi_ticket
+        // 根据jsapi_ticket 获取 signature
+
         var createNonceStr = function () {
             return Math.random().toString(36).substr(2, 15);
         };
@@ -19,8 +23,8 @@
         };
 
         // sfp
-        var app_id= 'wx52854f6960cb03b3';
-        var app_secret = '8e71f8cc53c808f3c489f84a164ac85a';
+        // var app_id= 'wx52854f6960cb03b3';
+        // var app_secret = '8e71f8cc53c808f3c489f84a164ac85a';
 
         // besturbo
         // var app_id = 'wxeb857b8d61b1c400';
