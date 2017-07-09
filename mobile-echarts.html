@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>echarts</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta name='format-detection' content='telephone=no'>
+  <style>
+    div{
+      width: 100%;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div id="rate"></div>
+  <div id="college"></div>
+  <div id="gap"></div>
+  <div id="display"></div>
+  <div id="support"></div>
+  <div id="device"></div>
+  <div id="feature"></div>
+  <div id="cloud"></div>
+  
+  <script src="js/jquery-2.1.4.js"></script>
+  <script src="js/echarts.min.js"></script>
+  <script src="js/worldcloud.js"></script>  
+  <script> 
+    $(function(){
+
+      let my_chart;
+
+      let init = () => {
+        rate_chart = echarts.init(document.getElementById('rate'));
+        college_chart = echarts.init(document.getElementById('college'));
+        gap_chart = echarts.init(document.getElementById('gap'));
+        display_chart = echarts.init(document.getElementById('display'));
+        support_chart = echarts.init(document.getElementById('support'));
+        device_chart = echarts.init(document.getElementById('device'));
+        feature_chart = echarts.init(document.getElementById('feature'));
+        cloud_chart = echarts.init(document.getElementById('cloud'));
+      };      
+
+      let rateFn = (count, sum) => {
+        return (count/sum).toFixed(2);
+      };
+
+      let rateDraw = (rate) => {
+
+        option = {
+            title : {
+                text: '使用比例',
+                subtext: '',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['20%以下','20%-50%', '50%-80%', '80%以上']
+            },
+            series : [
+                {
+                    name: '使用比例',
+                    type: 'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    data:[
+                        {value:rate.s, name:'20%以下'},
+                        {value:rate.m, name:'20%-50%'},                        
+                        {value:rate.l, name:'50%-80%'},
+                        {value:rate.b, name:'80%以上'},                        
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+
+        rate_chart.setOption(option);
+
+      };
+
+      let collegeDraw = (college) => {
+
+        option = {
+            title : {
+                text: '学院',
+                subtext: '',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['汉语学院','进修学院', '外国语学院', '其他']
+            },
+            series : [
+                {
+                    name: '学院',
+                    type: 'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    data:[
+                        {value:college.chinese, name:'汉语学院'},
+                        {value:college.advanced, name:'进修学院'},                        
+                        {value:college.foreign, name:'外国语学院'},
+                        {value:college.other, name:'其他'},                        
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+
+        college_chart.setOption(option);
+
+      };
+
+      let gapDraw = (gap) => {
+
+        option = {
+            title : {
+                text: '是否需要挡板',
+                subtext: '',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['是','否']
+            },
+            series : [
+                {
+                    name: '是否需要挡板',
+                    type: 'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    data:[
+                        {value:gap.need, name:'是'},
+                        {value:gap.no_need, name:'否'},                        
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+
+        gap_chart.setOption(option);
+
+      };
+
+      let displayDraw = (display) => {
+
+        option = {
+            title : {
+                text: '哪种显示结构',
+                subtext: '',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['单','双']
+            },
+            series : [
+                {
+                    name: '显示结构',
+                    type: 'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    data:[
+                        {value:display.one, name:'单'},
+                        {value:display.two, name:'双'},                        
+                    ],                    
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+
+        display_chart.setOption(option);
+
+      };
+
+      let supportDraw = (support) => {
+
+        option = {
+            title : {
+                text: '辅助支持',
+                subtext: '',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['教学平台','报修平台']
+            },
+            series : [
+                {
+                    name: '辅助支持',
+                    type: 'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    data:[
+                        {value:support.teach, name:'教学平台'},
+                        {value:support.repair, name:'报修平台'},                        
+                    ],                    
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+
+        support_chart.setOption(option);
+
+      };
+
+      let deviceDraw = (device) => {
+
+        option = {
+            title : {
+                text: '需要的教学设备',
+                subtext: '',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['投影机','电子白板', '互动大屏', '扩音设备']
+            },
+            series : [
+                {
+                    name: '需要的教学设备',
+                    type: 'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    data:[
+                        {value:device.projector, name:'投影机'},
+                        {value:device.whiteboard, name:'电子白板'},
+                        {value:device.interactive, name:'互动大屏'},
+                        {value:device.larger_voice, name:'扩音设备'},                        
+                    ],                    
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+
+        device_chart.setOption(option);
+
+      };
+
+      let featureDraw = (feature) => {
+
+        option = {
+            title : {
+                text: '关键特性',
+                subtext: '',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['功能丰富且强大','操作简单', '性能稳定', '友好的用户体验']
+            },
+            series : [
+                {
+                    name: '关键特性',
+                    type: 'pie',
+                    radius : '55%',
+                    center: ['50%', '60%'],
+                    data:[
+                        {value:feature.rich, name:'功能丰富且强大'},
+                        {value:feature.simple, name:'操作简单'},
+                        {value:feature.stable, name:'性能稳定'},
+                        {value:feature.friend, name:'友好的用户体验'},                        
+                    ],                    
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+
+        feature_chart.setOption(option);
+
+      };
+
+      let wordCloud = (could) => {
+
+        let cloud = [ 
+          { name: '输入法', value: 60.5445909135 },
+          { name: '设备', value: 52.2101103264 },
+          { name: '希望', value: 46.84804447662 },
+          { name: '教室', value: 41.567144967900006 },
+          { name: '学生', value: 40.342972753439994 },
+          { name: '阿拉伯语', value: 34.74296757748 },
+          { name: '及时', value: 29.8379894005 },
+          { name: '稳定', value: 25.8467064572 },
+          { name: '座位', value: 23.811294925080002 },
+          { name: 'office', value: 23.478408614167083 },
+          { name: '请用', value: 22.671456589 },
+          { name: '教师', value: 21.58144594611 },
+          { name: '杂音', value: 20.8698834984 },
+          { name: '灵活', value: 20.38960067697 },
+          { name: '支持', value: 20.30811881112 },
+          { name: '更新', value: 19.96720831692 },
+          { name: '联系方式', value: 19.64628041614 },
+          { name: '音量', value: 19.64628041614 },
+          { name: '操作系统', value: 18.5318973275 },
+          { name: '噪音', value: 17.70164328946 } ];
+
+
+        option = {  
+          tooltip : {},  
+          series: [ {  
+            type : 'wordCloud',  
+            shape:'smooth',  
+            gridSize : 2,  
+            sizeRange : [ 10, 100 ],  
+            rotationRange : [ 46, 80 ],  
+            textStyle : {  
+              normal : {  
+                color : function() {  
+                    return 'rgb('  
+                      +[Math.round(Math.random() * 160),  
+                                    Math.round(Math.random() * 160),  
+                                    Math.round(Math.random() * 160) ]  
+                                    .join(',') + ')';  
+                }  
+              },  
+              emphasis : {  
+                shadowBlur : 10,  
+                shadowColor : '#333'  
+              }  
+            },  
+            data : cloud  
+          }],  
+        };
+
+        cloud_chart.setOption(option);
+      
+      };
+
+
+
+      let parse = () => {
+
+        let config = {"gap":{"need":18,"no_need":66},"display":{"one":38,"two":42},"support":{"teach":49,"repair":68},"device":{"projector":31,"whiteboard":24,"interactive":19,"larger_voice":24},"feature":{"rich":41,"simple":49,"stable":42,"friend":42},"rate":{"s":7,"m":10,"l":24,"b":44},"college":{"chinese":10,"advanced":6,"foreign":63,"other":7}};
+
+        gapDraw(config.gap);
+        collegeDraw(config.college);
+        rateDraw(config.rate);
+        displayDraw(config.display);
+        supportDraw(config.support);
+        deviceDraw(config.device);
+        featureDraw(config.feature);
+        wordCloud();
+
+      };
+
+      init();
+      parse();
+
+    });
+  </script>
+</body>
+</html>
