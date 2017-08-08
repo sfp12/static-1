@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
+  <meta content="telephone=no" name="format-detection" />
+  <title>砍价</title>
+  <link href='./css/mobile/bargain/normalize.css' rel='stylesheet'>
+  <link href='./css/mobile/bargain/bargain.css' rel='stylesheet'>
+</head>
+<body>
+  <header>
+    <a href='#'>
+      <img src='./images/mobile/bargain/prev-page.png' alt='上一页' />
+    </a>
+    <h1>大家来砍价</h1>
+  </header>
+
+  <p class='title'>
+    “修女也疯狂”深圳站<span>280元</span>门票
+  </p>
+
+  <div class="time-con">
+    <div class='img-con'>
+      <img src='./images/mobile/bargain/profile-photo.png' alt='头像' />
+    </div>
+    <div class="time">
+      <span>剩余时间：</span>
+      <span class='rect' id='h-1'>7</span>
+      <span class='rect' id='h-2'>2</span>
+      :
+      <span class='rect prev' id='m-1'>0</span>
+      <span class='rect' id='m-2'>0</span>
+      :
+      <span class='rect prev' id='s-1'>0</span>
+      <span class='rect' id='s-2'>0</span>
+    </div>
+  </div>
+
+  <div class="rules-con">
+
+    <h2>活动规则</h2>
+    <p>
+      1.活动时间从参加活动开始72小时内砍价有效；
+    </p>
+    <p>
+      2.每邀请一个好友获得一次砍价机会，单次砍价从1到   10元不等；
+    </p>
+    <p>
+      3.砍价最多砍到原价的50%，当砍价达到原价50%，购买
+  资格生效，可点击购买按钮进行支付；
+    </p>
+    <p>
+      4.摩蜂娱乐拥有活动的最终解释权，如对活动有任何建议
+  或疑问，请联系客服。
+    </p>
+    <a href='#' class='detailed' id='detailed'>有奖活动细则</a>
+  </div>
+
+  <div class="bargain-con">
+    <div class="good-con">
+      <img src='./images/mobile/bargain/good.jpg' alt='商品名'/>
+    </div>
+    <div class="ranking-con">
+      <div>
+        <h3>砍价好友榜</h3>
+        <p>AAA帮你砍价了<span>8.9</span>元</p>
+        <p>AAA帮你砍价了<span>8.9</span>元</p>
+        <p>AAA帮你砍价了<span>8.9</span>元</p>
+        <p>AAA帮你砍价了<span>8.9</span>元</p>
+        <p>AAA帮你砍价了<span>8.9</span>元</p>
+        <p>AAA帮你砍价了<span>8.9</span>元</p>
+        <p>AAA帮你砍价了<span>8.9</span>元</p>
+        <p>AAA帮你砍价了<span>8.9</span>元</p>
+        <p>AAA帮你砍价了<span>8.9</span>元</p>
+        <p>AAA帮你砍价了<span>8.9</span>元</p>
+        <p>AAA帮你砍价了<span>8.9</span>元</p>
+        <p>AAA帮你砍价了<span>8.9</span>元</p>
+        <p>AAA帮你砍价了<span>8.9</span>元</p>
+        <p>AAA帮你砍价了<span>8.9</span>元</p>
+        <p>AAA帮你砍价了<span>8.9</span>元</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="btn-con">
+    <div class='bargain' id='bargain'>
+      砍一刀
+    </div>
+    <div class='buy'>
+      立即购买
+    </div>
+  </div>
+
+  <div class="slide-con">
+    <div class="tip-con" id='tip-con'>
+      <span id='cur-price'>280.00</span>
+    </div>
+    <div class="progress-con">
+      <div class="progress">
+        <div class="progress-inner" id='progress-inner'></div>
+      </div>
+      <img src='./images/mobile/bargain/slide.png' class='slide' id='slide' alt='滑块' />
+      <div class="price-con">
+        <div class="origin-price" id='origin-price' data-price='280'>
+          <p>原价</p>
+          <p>280元</p>
+        </div>
+        <div class="base-price" id='base-price' data-price='140'>
+          <p>底价</p>
+          <p>140元</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class='invite' id='invite'>
+    邀请好友砍价
+  </div>
+
+  <!-- 砍价提示 -->
+  <div class="mask" id='mask'>
+    <div class="bargain-tip-con" id='bargain-tip-con'>
+      <div class="bargain-tip">
+        您已帮好友砍掉10.00元
+      </div>
+    </div>
+
+    <div class="opacity" id='opacity'>
+      
+    </div>
+
+    <div class="arrow-con" id='arrow-con'>
+      <img src='./images/mobile/bargain/to-browser.png' alt='箭头'/>
+      <p>点击右上角</p>
+      <p>分享给好友</p>
+      <p>帮忙砍价</p>
+    </div>
+
+    <div class="detailed-con" id='detailed-con'>
+      <div class="content-con">
+        <h3>活动细则</h3>
+        <ul class="list">
+          <li class="item">
+            <h4>第一条 会员注册</h4>
+            <p>
+              本人同意，自愿加入摩蜂娱乐公众号及相关粉丝福利群，成为
+              摩蜂娱乐会员。本人同意在平台保留真实姓名、联系方式（手
+              机电话）及邮寄地址，并确保留存的信息真实有效。
+              未提交个人信息，不是摩蜂娱乐注册会员的，不可参
+              加摩蜂娱乐提供的官方活动。
+            </p>
+          </li>
+          <li class="item">
+            <h4>第二条 责任承担</h4>
+            <p>
+              本人确保不在摩蜂娱乐公众号及相关粉丝福利群中进行淫秽、
+              色情、虚假、低俗等信息的传播，不开展传销、欺骗、敲诈等
+              违反国家法律法规的行为。如有违反，本人将自愿承担由此给
+              摩蜂娱乐带来的一切不良后果，并承担由此产生的法律责任。
+            </p>
+          </li>
+          <li class="item">
+            <h4>第三条 参与要求</h4>
+            <p>
+              本人承诺遵守摩蜂娱乐官方设置的活动规则，认可活动的公平
+              和公正，对活动的全部规定（包括但不限于评奖、抽奖过程）
+              均无疑义。否则，视同本人主动放弃参与活动的资格。
+              若在参与活动中有违规、违法行为，一经查实，将无法获得摩
+              蜂娱乐平台提供的任何福利待遇和优惠政策，且摩蜂娱乐有权
+              取消其参与资格，并有权向其追回已经颁发的奖品或奖金。
+              获奖者在活动规定时间内，无法取得联系，则默认为自动放弃
+              活动参与权利，其获奖资格被自动取消。
+            </p>
+          </li>
+          <li class="item">
+            <h4>第四条  产品/奖品的使用</h4>
+            <p>
+              活动中的产品/奖品由摩蜂娱乐或第三方提供，本人确认在参
+              与活动前了解产品/奖品的使用情况，包括但不限于有效期、
+              正确的使用方法、使用人数、安全规范等内容，使用奖品或商
+              品中产生的后果均由本人自行承担。
+            </p>
+          </li>
+          <li class="item">
+            <h4>第五条 产品/奖品的退换</h4>
+            <p>
+              购买名单或中奖名单一旦在摩蜂娱乐各官方宣传平台公布，购
+              买者/获奖者不得无故提出更换或退换要求，特殊情况确实无
+              法兑现的除外。
+              奖品一旦被领取，则此奖品不退不换，不能兑换现金。领取奖
+              品所产生的额外费用，本人承诺自行承担。
+            </p>
+          </li>
+          <li class="item">
+            <h4>第六条 产品放弃</h4>
+            <p>
+              本人拥有主动放弃领取奖品的权力，此奖品由摩蜂娱乐收回，
+              本人承诺放弃后不得重新申领。如本人已收到相应奖品，需主
+              动退还给摩蜂娱乐，并自行承担邮寄费用。
+              摩蜂娱乐不对本人放弃领取奖品产生的后果承担任何责任，包
+              括但不限于折现、报销费用、赔偿损失等。
+            </p>
+          </li>
+          <li class="item">
+            <h4>第七条 奖品配送</h4>
+            <p>
+              注册会员购买的明星周边产品，一旦发出，不得无故退货。如
+              因质量问题发生的退换货行为，双方将各自承担相对应的运输
+              费用。
+            </p>
+          </li>
+          <li class="item">
+            <h4>第八条 其他</h4>
+            <p>
+              本平台发起的所有活动最终解释权，归罗盘文化•摩蜂娱乐所
+              有。
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+
+
+  
+  
+  <script src='./js/mobile/bargain/zepto.js'></script>
+  <script src='./js/mobile/bargain/bargain.js'></script>
+</body>
+</html>
