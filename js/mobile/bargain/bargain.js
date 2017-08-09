@@ -1,5 +1,14 @@
 $(function(){
 
+  let goodHeight = () => {
+
+    let _h = $('#good-con').width() * .75; 
+    $('#good-con').height(_h);
+    $('#ranking-con').height(_h);
+    $('#ranking-content').height(_h - 38);
+
+  }
+
   let initMask = () => {
 
     opacity();
@@ -28,9 +37,10 @@ $(function(){
     }  
 
     let updateRank = (_html) => {
-      
+
       $('#ranking-content').scrollTop(0);
-      $('#ranking-content p').eq(0).before(_html);
+      let _h = $('#ranking-content').html();
+      $('#ranking-content').html(_html+_h);
 
     }  
 
@@ -43,6 +53,10 @@ $(function(){
       $('#mask').show();
       $('#bargain').addClass('disabled');
       timer();
+      if($('#ranking-content').hasClass('default')){
+        $('#ranking-content').removeClass('default');
+        $('#ranking-content p').eq(0).remove();
+      }
       updateRank(`<p>AAA帮你砍价了<span>${bargain_price}</span>元</p>`)
 
       setTimeout(() => {
@@ -101,44 +115,12 @@ $(function(){
 
   let timer = () => {
 
-    let s_1_val = 0;
-    let s_2_val = 0;
-    let m_1_val = 0;
-    let m_2_val = 0;
-    let h_1_val = 0;
-    let h_2_val = 0;
-
-    let set_1 = setInterval(() => {
-      s_1_val = $('#s-1').text();
-      s_2_val = $('#s-2').text();
-      minus1(s_1_val+s_2_val, 's');
-    }, 1000);
-
-    let minus1 = (num, type) => {
-
-      num = +num;
-      if(num > 0){
-        num--;
-        setTime(num, type);
-      }else{
-        s_1_val = $('#s-1').text();
-        s_2_val = $('#s-2').text();
-        m_1_val = $('#m-1').text();
-        m_2_val = $('#m-2').text();
-        h_1_val = $('#h-1').text();
-        h_2_val = $('#h-2').text();
-        if(h_1_val === '0' && h_2_val === '0' && m_1_val === '0' && m_2_val === '0' && s_1_val === '0' && s_2_val === '0'){
-          clearInterval(set_1);
-          $('#bargain').addClass('disabled');
-          return false;
-        }
-        if(type !== 'h'){
-          setTime(59, type);
-          routerType(type);
-        }
-      }
-
-    }
+    let _h = 72;
+    let _m = 0;
+    let _s = 0;
+    let hours = 60*60;
+    let minutes = 60;
+    let set_1 = '';
 
     let setTime = (num, type) => {
 
@@ -160,27 +142,40 @@ $(function(){
 
     }
 
-    let routerType = (type) => {
+    let all_left = (new Date()).getTime() + _h * 60 * 60 * 1000 + _m * 60 * 1000 + _s * 1000;
 
-      if(type === 's'){
-        type = 'm';
-        m_1_val = $('#m-1').text();
-        m_2_val = $('#m-2').text();
-        minus1(m_1_val+m_2_val, 'm');
-      }else if(type === 'm'){
-        type = 'h';
-        h_1_val = $('#h-1').text();
-        h_2_val = $('#h-2').text();
-        minus1(h_1_val+h_2_val, 'h');
-      }else{
+    let computed = () => {
 
+      left = Math.floor((all_left - (new Date())) / 1000);
+      
+      if(left < 0){
+        left = 0;
       }
 
+      let h = Math.floor(left / hours);
+      setTime(h, 'h');
+      left -= h*hours;
+
+      let m = Math.floor(left / minutes);
+      setTime(m, 'm');
+      left -= m*minutes;
+      
+      s = left;      
+      setTime(s, 's');
+
+      if(h === 0 && m === 0 && s === 0){
+        clearInterval(set_1);
+      }
     }
+
+    set_1 = setInterval(function(){
+      computed();
+    }, 1000);    
 
   }
 
   let init = () => {
+    goodHeight();
     initMask();
     bargain();
     share();

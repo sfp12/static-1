@@ -2,7 +2,8 @@ html {
   font-size: 100px; }
 
 body {
-  background-color: #f7f7f7; }
+  background-color: #f7f7f7;
+  font-family: 'PingFang SC Regular'; }
   body.freeze {
     overflow: hidden; }
 
@@ -119,17 +120,21 @@ header {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-left: .12rem;
-  padding-right: .12rem; }
-  .bargain-con .good-con img {
-    width: 1.6rem;
-    height: 1.2rem;
-    border-radius: 4px; }
+  padding-right: .12rem;
+  padding-bottom: .35rem; }
+  .bargain-con .good-con {
+    font-size: 0;
+    width: 45.58%; }
+    .bargain-con .good-con img {
+      width: 100%;
+      height: 100%;
+      border-radius: 4px; }
   .bargain-con .ranking-con {
-    width: 1.8rem;
-    height: 1.2rem;
+    width: 51.28%;
+    /* height: 1.2rem;*/
     border-radius: .04rem;
     border: 1px solid #e0e0e0;
-    padding: .12rem;
+    padding: .06rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
     .bargain-con .ranking-con h3 {
@@ -138,13 +143,27 @@ header {
       line-height: .24rem;
       font-size: .15rem;
       margin: 0; }
-    .bargain-con .ranking-con div {
-      height: .72rem;
-      overflow: scroll; }
-      .bargain-con .ranking-con div p {
+    .bargain-con .ranking-con .ranking-content {
+      overflow: scroll;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .bargain-con .ranking-con .ranking-content.default {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .bargain-con .ranking-con .ranking-content.default p {
+          display: block;
+          font-size: .12rem;
+          color: #808080;
+          text-align: center; }
+      .bargain-con .ranking-con .ranking-content p {
         margin: 0;
         font-size: .13rem; }
-        .bargain-con .ranking-con div p span {
+        .bargain-con .ranking-con .ranking-content p span {
           color: #ff6600; }
 
 .btn-con {
