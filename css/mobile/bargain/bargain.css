@@ -121,25 +121,26 @@ header {
   padding-left: .12rem;
   padding-right: .12rem; }
   .bargain-con .good-con img {
-    width: 1.4rem;
-    height: 1.2rem; }
+    width: 1.6rem;
+    height: 1.2rem;
+    border-radius: 4px; }
   .bargain-con .ranking-con {
-    width: 2rem;
+    width: 1.8rem;
     height: 1.2rem;
     border-radius: .04rem;
     border: 1px solid #e0e0e0;
     padding: .12rem;
     -webkit-box-sizing: border-box;
     box-sizing: border-box; }
+    .bargain-con .ranking-con h3 {
+      font-weight: normal;
+      color: #ff6600;
+      line-height: .24rem;
+      font-size: .15rem;
+      margin: 0; }
     .bargain-con .ranking-con div {
-      height: .96rem;
+      height: .72rem;
       overflow: scroll; }
-      .bargain-con .ranking-con div h3 {
-        font-weight: normal;
-        color: #ff6600;
-        line-height: .24rem;
-        font-size: .15rem;
-        margin: 0; }
       .bargain-con .ranking-con div p {
         margin: 0;
         font-size: .13rem; }
@@ -165,11 +166,14 @@ header {
     color: #ff6600;
     border: 1px solid #ff6600; }
     .btn-con .bargain.disabled {
-      color: #ccc;
-      border: 1px solid #ccc; }
+      color: white;
+      border: 1px solid #ccc;
+      background-color: #ccc; }
   .btn-con .buy {
     background-color: #ccc;
     color: white; }
+    .btn-con .buy.active {
+      background-color: #ff6600; }
 
 .slide-con {
   font-size: 0;

@@ -25,7 +25,14 @@ $(function(){
       $('#slide').css({left: _pos});
       $('#progress-inner').width(_pos);
       
-    }    
+    }  
+
+    let updateRank = (_html) => {
+      
+      $('#ranking-content').scrollTop(0);
+      $('#ranking-content p').eq(0).before(_html);
+
+    }  
 
     $('#bargain').on('click', (e) => {
       $('body').addClass('freeze');
@@ -35,6 +42,8 @@ $(function(){
       $('#bargain-tip-con').show();
       $('#mask').show();
       $('#bargain').addClass('disabled');
+      timer();
+      updateRank(`<p>AAA帮你砍价了<span>${bargain_price}</span>元</p>`)
 
       setTimeout(() => {
         $('body').removeClass('freeze');
@@ -120,6 +129,7 @@ $(function(){
         h_2_val = $('#h-2').text();
         if(h_1_val === '0' && h_2_val === '0' && m_1_val === '0' && m_2_val === '0' && s_1_val === '0' && s_2_val === '0'){
           clearInterval(set_1);
+          $('#bargain').addClass('disabled');
           return false;
         }
         if(type !== 'h'){
@@ -174,8 +184,7 @@ $(function(){
     initMask();
     bargain();
     share();
-    detailed();
-    timer();
+    detailed();    
   }
 
   init();

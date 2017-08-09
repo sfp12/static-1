@@ -155,29 +155,30 @@ header{
 
   .good-con{
     img{
-      width: 1.4rem;
+      width: 1.6rem;
       height: 1.2rem;
+      border-radius: 4px;
     }
   }
   .ranking-con{
-    width: 2rem;
+    width: 1.8rem;
     height: 1.2rem;
     border-radius: .04rem;
     border: 1px solid #e0e0e0;
     padding: .12rem;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;    
-    
+    h3{
+      font-weight: normal;
+      color: $color_1;
+      line-height: .24rem;
+      font-size: .15rem;
+      margin: 0;
+    }
     div{
-      height: .96rem;
+      height: .72rem;
       overflow: scroll;
-      h3{
-        font-weight: normal;
-        color: $color_1;
-        line-height: .24rem;
-        font-size: .15rem;
-        margin: 0;
-      }
+      
       p{
         margin: 0;
         font-size: .13rem;
@@ -211,15 +212,16 @@ header{
     color: $color_1;
     border: 1px solid $color_1;
     &.disabled{
-      color: #ccc;
+      color: white;
       border: 1px solid #ccc;
+      background-color: #ccc;
     }
   }
   .buy{
     background-color: #ccc;
     color: white;
     &.active{
-     
+     background-color: $color_1;
     }
   }
 }
