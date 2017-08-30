@@ -1,0 +1,121 @@
+﻿var data = {
+    "WellName": "任312",                                             
+    "StationName": "17计",                                           
+	"AreaName":"任南工区",                                  		  
+    "WaterInjectionType": "边缘注水",                                 
+    "InjectionAllocation": "3.00",                                   
+    "ReportDate": "2017-05-22",                                      
+    "BaseNumber": "25.00",                                           
+	"DailyTotalWaterInjection":"3.00",                               
+	"Auditor":"张三",                                                 
+    "list": [                                            
+        {
+            "Team": "第一班",                        
+            "Watch": "李四",                                          
+            "Remark": "注水井工作正常，压力稳定。",                       
+			"TeamWaterInjection":"1.00",                              
+            "Data": [
+                {
+                    "TeamDate": "08:00",                              
+                    "TrunkPressure": "5.00",                          
+                    "TubingPressure": "4.00",                         
+                    "CasingPressure": "4.00",                         
+                    "WaterMeterReading": "25.25"                      
+                },
+                {
+                    "TeamDate": "10:00",
+                    "TrunkPressure": "5.00",
+                    "TubingPressure": "4.00",
+                    "CasingPressure": "4.00",
+                    "WaterMeterReading": "25.50"
+                },
+                {
+                    "TeamDate": "12:00",
+                    "TrunkPressure": "5.00",
+                    "TubingPressure": "4.00",
+                    "CasingPressure": "4.00",
+                    "WaterMeterReading": "25.75"
+                },
+                {
+                    "TeamDate": "14:00",
+                    "TrunkPressure": "5.00",
+                    "TubingPressure": "4.00",
+                    "CasingPressure": "4.00",
+                    "WaterMeterReading": "26.00"
+                }
+            ]
+        },
+        {
+            "Team": "第二班",
+            "Watch": "王五",
+			"Remark": "注水井工作正常，压力稳定。",                       
+			"TeamWaterInjection":"1.00",
+            "Data": [
+                {
+                    "TeamDate": "16:00",
+                    "TrunkPressure": "5.00",
+                    "TubingPressure": "4.00",
+                    "CasingPressure": "4.00",
+                    "WaterMeterReading": "26.25"
+                },
+                {
+                    "TeamDate": "18:00",
+                    "TrunkPressure": "5.00",
+                    "TubingPressure": "4.00",
+                    "CasingPressure": "4.00",
+                    "WaterMeterReading": "26.50"
+                },
+                {
+                    "TeamDate": "20:00",
+                    "TrunkPressure": "5.00",
+                    "TubingPressure": "4.00",
+                    "CasingPressure": "4.00",
+                    "WaterMeterReading": "26.75"
+                },
+                {
+                    "TeamDate": "22:00",
+                    "TrunkPressure": "5.00",
+                    "TubingPressure": "4.00",
+                    "CasingPressure": "4.00",
+                    "WaterMeterReading": "27.00"
+                }
+            ]
+        },
+        {
+            "Team": "第三班",
+            "Watch": "陈六",
+			"Remark": "注水井工作正常，压力稳定。",                       
+			"TeamWaterInjection":"1.00",
+            "Data": [
+                {
+                    "TeamDate": "00:00",
+                    "TrunkPressure": "5.00",
+                    "TubingPressure": "4.00",
+                    "CasingPressure": "4.00",
+                    "WaterMeterReading": "27.25"
+                },
+                {
+                    "TeamDate": "02:00",
+                    "TrunkPressure": "5.00",
+                    "TubingPressure": "4.00",
+                    "CasingPressure": "4.00",
+                    "WaterMeterReading": "27.50"
+                },
+                {
+                    "TeamDate": "04:00",
+                    "TrunkPressure": "5.00",
+                    "TubingPressure": "4.00",
+                    "CasingPressure": "4.00",
+                    "WaterMeterReading": "27.75"
+                },
+                {
+                    "TeamDate": "06:00",
+                    "TrunkPressure": "5.00",
+                    "TubingPressure": "4.00",
+                    "CasingPressure": "4.00",
+                    "WaterMeterReading": "28.00"
+                }
+            ]
+        }
+    ]
+}

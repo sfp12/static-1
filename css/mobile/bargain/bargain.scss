@@ -71,6 +71,7 @@ header{
   .img-con{
     img{
       width: .6rem;
+      border-radius: .3rem;
     }
   }
   .time{
@@ -239,11 +240,11 @@ header{
       background-color: #ccc;
     }
   }
-  .buy{
-    background-color: #ccc;
+  .buy{    
     color: white;
-    &.active{
-     background-color: $color_1;
+    background-color: $color_1;
+    &.disabled{
+     background-color: #ccc;
     }
   }
 }
@@ -255,7 +256,7 @@ header{
 
   .tip-con{
     padding-bottom: .12rem;
-    width: 3.04rem;
+    width: 2.84rem;
     margin: 0 auto;
 
     span{

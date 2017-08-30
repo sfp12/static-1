@@ -6,8 +6,10 @@
   <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
   <meta content="telephone=no" name="format-detection" />
   <title>砍价</title>
-  <link href='./css/mobile/bargain/normalize.css' rel='stylesheet'>
-  <link href='./css/mobile/bargain/bargain.css' rel='stylesheet'>
+  <link href='./css/mobile/bargain/normalize.css'>
+  <!-- <link href="./css/mobile/bargain/weui.css" />
+  <link href="./css/mobile/bargain/jquery-weui.css" /> -->
+  <link href='./css/mobile/bargain/bargain.css'>
 </head>
 <body>
   <header>
@@ -18,12 +20,12 @@
   </header>
 
   <p class='title'>
-    “修女也疯狂”深圳站<span>280元</span>门票
+    “修女也疯狂”深圳站8月13日20点<span id='origin-price-title'>280元</span>门票
   </p>
 
   <div class="time-con">
     <div class='img-con'>
-      <img src='./images/mobile/bargain/profile-photo.png' alt='头像' />
+      <img src='./images/mobile/bargain/profile-photo.png' id='profile-photo' alt='头像' />
     </div>
     <div class="time">
       <span>剩余时间：</span>
@@ -42,7 +44,7 @@
 
     <h2>活动规则</h2>
     <p>
-      1.活动时间从参加活动开始72小时内砍价有效；
+      1.活动时间从参加活动开始48小时内砍价有效；
     </p>
     <p>
       2.每邀请一个好友获得一次砍价机会，单次砍价从1到   10元不等；
@@ -90,14 +92,14 @@
     <div class='bargain' id='bargain'>
       砍一刀
     </div>
-    <div class='buy'>
+    <div class='buy' id='buy'>
       立即购买
     </div>
   </div>
 
   <div class="slide-con">
     <div class="tip-con" id='tip-con'>
-      <span id='cur-price'>280.00</span>
+      <span id='cur-price'>79</span>
     </div>
     <div class="progress-con">
       <div class="progress">
@@ -105,13 +107,13 @@
       </div>
       <img src='./images/mobile/bargain/slide.png' class='slide' id='slide' alt='滑块' />
       <div class="price-con">
-        <div class="origin-price" id='origin-price' data-price='280'>
+        <div class="origin-price" id='origin-price' data-price='100'>
           <p>原价</p>
-          <p>280元</p>
+          <p>100元</p>
         </div>
-        <div class="base-price" id='base-price' data-price='140'>
+        <div class="base-price" id='base-price' data-price='50'>
           <p>底价</p>
-          <p>140元</p>
+          <p>50元</p>
         </div>
       </div>
     </div>
@@ -228,13 +230,12 @@
         </ul>
       </div>
     </div>
-  </div>
-  
-
-
-  
+  </div>  
   
   <script src='./js/mobile/bargain/zepto.js'></script>
+  <script src='./js/mobile/bargain/cookie.min.js'></script>
+  <!-- <script src="./js/mobile/bargain/jquery-weui.js"></script> -->
+  <script src='./js/mobile/bargain/common.js'></script>
   <script src='./js/mobile/bargain/bargain.js'></script>
 </body>
 </html>

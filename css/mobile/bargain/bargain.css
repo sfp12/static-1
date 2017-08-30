@@ -53,7 +53,8 @@ header {
   display: flex;
   padding-bottom: .21rem; }
   .time-con .img-con img {
-    width: .6rem; }
+    width: .6rem;
+    border-radius: .3rem; }
   .time-con .time {
     -webkit-box-flex: 1;
     -ms-flex: 1;
@@ -189,10 +190,10 @@ header {
       border: 1px solid #ccc;
       background-color: #ccc; }
   .btn-con .buy {
-    background-color: #ccc;
-    color: white; }
-    .btn-con .buy.active {
-      background-color: #ff6600; }
+    color: white;
+    background-color: #ff6600; }
+    .btn-con .buy.disabled {
+      background-color: #ccc; }
 
 .slide-con {
   font-size: 0;
@@ -200,7 +201,7 @@ header {
   background-color: white; }
   .slide-con .tip-con {
     padding-bottom: .12rem;
-    width: 3.04rem;
+    width: 2.84rem;
     margin: 0 auto; }
     .slide-con .tip-con span {
       display: inline-block;

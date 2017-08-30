@@ -1,0 +1,1022 @@
+﻿var data = {
+    "EquipmentName": "任312井抽油机",                                
+    "CompanyNumber": "JY-CYJ-312",                                 
+    "Month": "5",                                                  
+    "FirstRepairDate": "2017-04-22 15:43",                         
+    "SecondRepairDate": "2017-01-15 02:00",                        
+    "list": [
+        {
+            "Date": "2017-05-01",                                 
+            "Data": [
+                {
+                    "Team": "0-8点",                              
+                    "TeamRunningTime": "8.00",                    
+                    "TotalRunningTime": "4660.00",                
+                    "FirstMaintainRunningTime": "216.00",         
+                    "SecondMaintainRunningTime": "2520.00",       
+                    "DownTime": "5.00",                           
+                    "Handlers": "张三"                             
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "8",
+                    "TotalRunningTime": "4668.00",
+                    "FirstMaintainRunningTime": "224.00",
+                    "SecondMaintainRunningTime": "2528.00",
+                    "DownTime": "5.00",
+                    "Handlers": "李四"
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "8.00",
+                    "TotalRunningTime": "4676.00",
+                    "FirstMaintainRunningTime": "232.00",
+                    "SecondMaintainRunningTime": "2536.00",
+                    "DownTime": "5.00",
+                    "Handlers": "王五"
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-02",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-03",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-04",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-05",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-06",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-07",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-08",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-09",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-10",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-11",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-12",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-13",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-14",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-15",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-16",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-17",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-18",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-19",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-20",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-21",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-22",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "23",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-23",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-24",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-25",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-26",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-27",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-28",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-29",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-30",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        },
+        {
+            "Date": "2017-05-31",
+            "Data": [
+                {
+                    "Team": "0-8点",
+                    "TeamRunningTime": "31",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "8-16点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                },
+                {
+                    "Team": "16-0点",
+                    "TeamRunningTime": "",
+                    "TotalRunningTime": "",
+                    "FirstMaintainRunningTime": "",
+                    "SecondMaintainRunningTime": "",
+                    "DownTime": "",
+                    "Handlers": ""
+                }
+            ]
+        }
+    ],
+    "MonthTotal": {                               
+        "MonthTotalRunningDay": "31.00",              
+        "MonthTotalDownTime": "0.00",                 
+        "MonthTotalRunningTime": "744.00",            
+        "MonthTotalDay": "31",                        
+        "MonthTotalOilChangeLitre": "20.00",          
+        "MonthTotalPerson": "冯六"                     
+    },
+    "Repair": {                                  
+        "RepairLevel": "2级",                         
+        "RepairTime": [                               
+            {
+                "StartTime": "2017-05-22 15:43",        
+                "EndTime": "2017-05-22 16:20"           
+            }
+        ],
+        "RepairContent": "设备运转正常，无维修。",       
+        "RepairDepartment": "17计",                   
+        "RepairPerson": "冯六"                        
+    },
+    "Remark": "备注"                                
+}
