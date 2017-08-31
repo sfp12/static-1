@@ -15,11 +15,12 @@ $(function(){
   let computedRecommendHeight = () => {
     let window_height = window.innerHeight;
     let banner_height = $('#banner-con').height();
-    let fns_height = 1.03 * 100;
-    let flash_height = .33 * 100;
-    let hr_height = .1 * 100;
-    let title_height = .41 * 100;
-    let footer_height = .45 * 100;
+    let html_size = +$('html').css('fontSize').replace('px', '');
+    let fns_height = 2.06 * html_size;
+    let flash_height = .66 * html_size;
+    let hr_height = .1 * html_size;
+    let title_height = .82 * html_size;
+    let footer_height = 1 * html_size;
 
     let recommend_height = window_height - banner_height - fns_height - flash_height - hr_height - title_height - footer_height;
     $('#recommend-list').height(recommend_height);

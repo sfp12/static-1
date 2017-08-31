@@ -6,8 +6,10 @@
   <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width">
   <meta content="telephone=no" name="format-detection" />
   <title>金融聚合</title>
+  <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
   <link href='./css/mobile/m-c/normalize.css' rel='stylesheet'>
   <link href='./css/mobile/m-c/common.css' rel='stylesheet'>
+  <link href='./css/mobile/m-c/loan.css' rel='stylesheet'>
 </head>
 <body>
   
@@ -25,7 +27,10 @@
         <div class='form-group money-con'>
           <label>金额：</label>
           <input type='text' >
-          <span>元</span> 
+          <span>元</span>
+          <!-- <div class='yuan-con'>
+            <span>元</span>
+          </div>  -->
         </div>
         <div class='form-group period-con'>
           <label>期限：</label>
@@ -165,20 +170,25 @@
   
   <footer>
     <div class="item">
-      <img src='./images/mobile/m-c/foot-home.png'>
-      <span>首页</span>
+      <a href='index.html'>
+        <img src='./images/mobile/m-c/foot-home.png'>
+        <p>首页</p>
+      </a>
     </div>
-    <div class="item active">
-      <img src='./images/mobile/m-c/foot-loan-active.png'>
-      <span>贷款</span>
+    <div class="item  active">
+      <a href='javascript:void(0);'>
+        <img src='./images/mobile/m-c/foot-loan-active.png'>
+        <p>贷款</p>
+      </a>
     </div>
     <div class="item">
-      <img src='./images/mobile/m-c/foot-profile.png' style='width: 0.17rem;'>
-      <span>我的</span>
+      <a href='loan-detail.html'>
+        <img src='./images/mobile/m-c/foot-profile.png'>
+        <p>我的</p>
+      </a>
     </div>
   </footer>
   <script src='./js/mobile/m-c/zepto.js'></script>
-  <script src='./js/mobile/m-c/cookie.min.js'></script>
   <script src='./js/mobile/m-c/loan.js'></script>
 </body>
 </html>

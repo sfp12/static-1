@@ -1,0 +1,189 @@
+body {
+  font-size: 20px;
+  background-color: #eee; }
+  [data-dpr="2"] body {
+    font-size: 40px; }
+  [data-dpr="3"] body {
+    font-size: 60px; }
+  body header {
+    font-size: 0;
+    background: url(../../../images/mobile/m-c/detail-banner.png);
+    background-size: contain; }
+    body header .text-con {
+      width: 100%;
+      display: inline-block;
+      position: relative; }
+      body header .text-con a {
+        position: absolute;
+        top: 0;
+        left: .3rem;
+        width: 24px;
+        height: 44px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        body header .text-con a img {
+          width: .2rem; }
+      body header .text-con h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 19px;
+        color: white;
+        line-height: .28rem;
+        margin-top: 0.46rem; }
+        [data-dpr="2"] body header .text-con h1 {
+          font-size: 38px; }
+        [data-dpr="3"] body header .text-con h1 {
+          font-size: 57px; }
+  body .main-con {
+    width: 100%;
+    padding: 0 .2rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+    body .main-con .loan-con {
+      padding: .2rem 0 .3rem 0;
+      background-color: #fff;
+      margin-top: -.54rem;
+      -webkit-box-shadow: 0 .04rem .07rem #d0d0ed;
+      box-shadow: 0 .04rem .07rem #d0d0ed;
+      margin-bottom: .2rem; }
+      body .main-con .loan-con .info-con {
+        padding-left: .2rem;
+        padding-right: .2rem;
+        padding-bottom: .2rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        clear: both;
+        position: relative; }
+        body .main-con .loan-con .info-con:after {
+          content: " ";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          height: 1px;
+          border-bottom: 1px solid #ccc;
+          color: #ccc;
+          -webkit-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+          -webkit-transform: scaleY(0.5);
+          transform: scaleY(0.5); }
+        body .main-con .loan-con .info-con .img-con {
+          font-size: 0;
+          float: left;
+          margin-top: -.36rem; }
+          body .main-con .loan-con .info-con .img-con img {
+            width: 1.3rem;
+            margin-right: .2rem; }
+        body .main-con .loan-con .info-con .text-con {
+          float: right;
+          -webkit-box-flex: 1;
+          -ms-flex: 1;
+          flex: 1;
+          color: #111; }
+          body .main-con .loan-con .info-con .text-con h2 {
+            margin: 0;
+            width: 100%;
+            font-size: 17px;
+            line-height: .28rem;
+            color: #333;
+            margin-bottom: .2rem; }
+            [data-dpr="2"] body .main-con .loan-con .info-con .text-con h2 {
+              font-size: 34px; }
+            [data-dpr="3"] body .main-con .loan-con .info-con .text-con h2 {
+              font-size: 51px; }
+            body .main-con .loan-con .info-con .text-con h2 small {
+              color: #ec864e;
+              font-size: 11px;
+              float: right; }
+              [data-dpr="2"] body .main-con .loan-con .info-con .text-con h2 small {
+                font-size: 22px; }
+              [data-dpr="3"] body .main-con .loan-con .info-con .text-con h2 small {
+                font-size: 33px; }
+          body .main-con .loan-con .info-con .text-con p {
+            color: #868686;
+            width: 100%;
+            font-size: 13px;
+            margin: 0;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between; }
+            [data-dpr="2"] body .main-con .loan-con .info-con .text-con p {
+              font-size: 26px; }
+            [data-dpr="3"] body .main-con .loan-con .info-con .text-con p {
+              font-size: 39px; }
+      body .main-con .loan-con .list-argu {
+        margin-top: .3rem;
+        margin-bottom: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+        body .main-con .loan-con .list-argu .item {
+          list-style: none;
+          text-align: center; }
+          body .main-con .loan-con .list-argu .item p {
+            font-size: 13px;
+            margin: 0; }
+            [data-dpr="2"] body .main-con .loan-con .list-argu .item p {
+              font-size: 26px; }
+            [data-dpr="3"] body .main-con .loan-con .list-argu .item p {
+              font-size: 39px; }
+            body .main-con .loan-con .list-argu .item p.number {
+              font-size: 16px;
+              color: #e80b0b; }
+              [data-dpr="2"] body .main-con .loan-con .list-argu .item p.number {
+                font-size: 32px; }
+              [data-dpr="3"] body .main-con .loan-con .list-argu .item p.number {
+                font-size: 48px; }
+    body .main-con .need-con {
+      background-color: #fff;
+      -webkit-box-shadow: 0 .04rem .07rem #d0d0ed;
+      box-shadow: 0 .04rem .07rem #d0d0ed;
+      margin-bottom: .2rem; }
+      body .main-con .need-con .img-con {
+        margin-left: -.1rem;
+        padding-top: .16rem;
+        width: 1.56rem;
+        font-size: 0; }
+        body .main-con .need-con .img-con img {
+          width: 100%; }
+      body .main-con .need-con .list {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: .3rem .2rem .3rem .2rem; }
+        body .main-con .need-con .list .item {
+          list-style: none;
+          font-size: 12px;
+          line-height: .36rem;
+          color: #666666; }
+          [data-dpr="2"] body .main-con .need-con .list .item {
+            font-size: 24px; }
+          [data-dpr="3"] body .main-con .need-con .list .item {
+            font-size: 36px; }
+  body .apply {
+    width: 100%;
+    height: .9rem;
+    background-color: #4e54ef;
+    text-align: center;
+    line-height: .9rem;
+    color: #fff;
+    font-size: 18px;
+    margin-top: .2rem; }
+    [data-dpr="2"] body .apply {
+      font-size: 36px; }
+    [data-dpr="3"] body .apply {
+      font-size: 54px; }
+
+/*# sourceMappingURL=loan-detail.css.map */
