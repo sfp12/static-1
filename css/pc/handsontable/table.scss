@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+.handsontable{
+   .htDimmed{
+    color: black;
+   }
+
+  tr{
+    &:nth-child(1){  /* 第一行的高度*/
+      td{
+        height: 50px;
+      }
+    }
+    td{
+      text-align: center;
+      vertical-align: middle;  
+      &:nth-child(1){ /* 第一列的高度*/
+        width: 50px;
+      }    
+    }
+  }
+   
+}
+
