@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no"/>
+    <title>课表</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet"> 
+    <style>
+      .black{
+        background-color: black;
+        color: white;
+      }
+      .red{
+        background-color: red;
+        color: white;
+      }
+      .blue{
+        background-color: blue;
+        color: white;
+      }
+    </style>   
+</head>
+<body class='container'>
+  <table class='table table-bordered'>
+    <thead>
+      <th colspan='2'></th>
+      <th>星期一</th>
+      <th>星期二</th>
+      <th>星期三</th>
+      <th>星期四</th>
+      <th>星期五</th>
+    </thead>
+    <tbody>
+      <!-- <tr>
+        <td rowspan='4'>1</td>
+        <td>2</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>2</td>
+      </tr> -->
+    </tbody>
+  </table>
+  <script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+  <script type="text/javascript" src="js/class.json"></script>
+  <script>
+    // 进修：1，研究生：2，本科：3，汉语：4
+
+    $(function(){
+      
+      // 处理对象，生成table
+      var start = function(){
+
+        for(cl in _s){
+          for(ti in _s[cl]){
+            console.log('ti', ti, ti == 1);  // 1
+            var str = '<tr>';
+            if(ti == 1){
+              // 第一行          
+              str += '<td rowspan="4">'+cl+'</td>';
+            }else{
+
+            }
+            str += '<td>'+ti+'</td>';
+            for(week in _s[cl][ti]){
+              if(_s[cl][ti][week].a == 1){
+                str += '<td class="black">'+_s[cl][ti][week].c+'</td>';
+              }else if(_s[cl][ti][week].a == 2 || _s[cl][ti][week].a == 3){
+                str += '<td class="red">'+_s[cl][ti][week].c+'</td>';
+              }else if(_s[cl][ti][week].a == 4){
+                str += '<td class="blue">'+_s[cl][ti][week].c+'</td>';
+              }
+              
+            }
+            str += '</tr>';
+            $('tbody').append(str);
+          }
+        }
+      }
+
+      start();
+      
+    })
+  </script>
+</body>
+</html>
