@@ -27,14 +27,6 @@
   </head>
   <body>
     <div>
-      <!-- <div id="imgInput">
-        Upload Image : <input type="file" onchange="onFileSelected(event)" value="chose picture">
-      </div>
-      <div id="buttons">
-        <button id="slider" onclick="setMode(&#39;slider&#39;)" style="background-color:rgb(255, 255, 255)">Auto Slider Mode</button>
-        <button id="play" onclick="setMode(&#39;play&#39;)" style="background-color:rgb(150, 236, 241)">Play Mode</button> 
-        <p id="msg"> Move mouse pointer In/Out of a circle</p>   
-      </div> -->
       <div id="imgParent">
         <img id="myimage" src="./images/pc/birth/all.jpg" height="512" width="512">      
       </div>
@@ -54,29 +46,6 @@
       var imageMap = d3.imageMap()
                         .setMode('play')
                         .setImageSize([512,512]);
-
-      // function setMode(_){
-      //   d3.select(_==='play'?'#slider':'#play').style('background-color','rgb(255, 255, 255)')
-      //   d3.select('#'+_).style('background-color','rgb(150, 236, 241)')
-      //   if(_ == 'play')
-      //     d3.select('#msg').style('display','block');
-      //   else
-      //     d3.select('#msg').style('display','none');
-
-      //   imageMap.setMode(_);
-      //   render();
-      // }
-
-      // function onFileSelected(event) {
-      //       var selectedFile = event.target.files[0];
-      //       var reader = new FileReader();
-      //           imgtag.title = selectedFile.name;
-
-      //       reader.onload = function(event) {
-      //         imgtag.src = event.target.result;
-      //       };
-      //       reader.readAsDataURL(selectedFile);
-      // }
 
       function render(){
             imageMap.buildCanvas();
