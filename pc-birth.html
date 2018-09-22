@@ -35,9 +35,9 @@
         <button id="play" onclick="setMode(&#39;play&#39;)" style="background-color:rgb(150, 236, 241)">Play Mode</button> 
         <p id="msg"> Move mouse pointer In/Out of a circle</p>   
       </div> -->
-      <!-- <div id="imgParent">
-        <img id="myimage" src="images/pc/birth/all.jpg" height="512" width="512">      
-      </div> -->
+      <div id="imgParent">
+        <img id="myimage" src="./images/pc/birth/all.jpg" height="512" width="512">      
+      </div>
 
       <div id="chart"><svg width="512" height="712"><g class="cg"><circle cx="256" cy="256" style="fill: rgb(29, 29, 29);" r="256"></circle></g></svg></div>
     </div>  
@@ -48,7 +48,7 @@
 
     <script>
       var imgtag = document.getElementById("myimage");
-          imgtag.src = "images/pc/birth/all.jpg";
+          imgtag.src = "./images/pc/birth/all.jpg";
           imgtag.onload = render;
 
       var imageMap = d3.imageMap()
