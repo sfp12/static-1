@@ -1,102 +1,90 @@
 <!DOCTYPE html>
-<!-- saved from url=(0054)https://bl.ocks.org/nswamy14/raw/df13d67b6efeb19eb640/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>ImageMap</title>
-  <!-- <link href="styles/css/it-mlaf.min.css" rel="stylesheet"> -->
-<style type="text/css">
-  #imgParent{
-    display: none;
-  }
-  #buttons{
-    position: relative;
-    text-align: center;
-    display: block;
+  <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>🎂</title>
+    <style type="text/css">
+      #imgParent{
+        display: none;
+      }
+      #buttons{
+        position: relative;
+        text-align: center;
+        display: block;
 
-  }
-  #chart{
-    position: relative;
-    top: 20px;
-    text-align: center;
-  }
+      }
+      #chart{
+        position: relative;
+        top: 20px;
+        text-align: center;
+      }
 
-  #msg{
-    display: block;
-    margin: 10px;
-    font-family: sans-serif;
-    font-size: 15px;
+      #msg{
+        display: block;
+        margin: 10px;
+        font-family: sans-serif;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- <div id="imgInput">
+        Upload Image : <input type="file" onchange="onFileSelected(event)" value="chose picture">
+      </div>
+      <div id="buttons">
+        <button id="slider" onclick="setMode(&#39;slider&#39;)" style="background-color:rgb(255, 255, 255)">Auto Slider Mode</button>
+        <button id="play" onclick="setMode(&#39;play&#39;)" style="background-color:rgb(150, 236, 241)">Play Mode</button> 
+        <p id="msg"> Move mouse pointer In/Out of a circle</p>   
+      </div> -->
+      <!-- <div id="imgParent">
+        <img id="myimage" src="images/pc/birth/all.jpg" height="512" width="512">      
+      </div> -->
 
-  }
+      <div id="chart"><svg width="512" height="712"><g class="cg"><circle cx="256" cy="256" style="fill: rgb(29, 29, 29);" r="256"></circle></g></svg></div>
+    </div>  
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./js/pc/birth/sliding_bar.js"></script>
+    <script type="text/javascript" src="./js/pc/birth/imageMap.js"></script>
 
-</style>
-</head>
+    <script>
+      var imgtag = document.getElementById("myimage");
+          imgtag.src = "images/pc/birth/all.jpg";
+          imgtag.onload = render;
 
-<body>
+      var imageMap = d3.imageMap()
+                        .setMode('play')
+                        .setImageSize([512,512]);
 
-  <div>
+      // function setMode(_){
+      //   d3.select(_==='play'?'#slider':'#play').style('background-color','rgb(255, 255, 255)')
+      //   d3.select('#'+_).style('background-color','rgb(150, 236, 241)')
+      //   if(_ == 'play')
+      //     d3.select('#msg').style('display','block');
+      //   else
+      //     d3.select('#msg').style('display','none');
 
-    <div id="imgInput">
-      Upload Image : <input type="file" onchange="onFileSelected(event)" value="chose picture">
-    </div>
-    <div id="buttons">
-      <button id="slider" onclick="setMode(&#39;slider&#39;)" style="background-color:rgb(255, 255, 255)">Auto Slider Mode</button>
-      <button id="play" onclick="setMode(&#39;play&#39;)" style="background-color:rgb(150, 236, 241)">Play Mode</button> 
-      <p id="msg"> Move mouse pointer In/Out of a circle</p>   
-    </div>
-    <div id="imgParent">
-      <img id="myimage" src="images/pc/birth/all.jpg" height="512" width="512">      
-    </div>
+      //   imageMap.setMode(_);
+      //   render();
+      // }
 
-    <div id="chart"><svg width="512" height="712"><g class="cg"><circle cx="256" cy="256" style="fill: rgb(29, 29, 29);" r="256"></circle></g></svg></div>
-  </div>
-  
-  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
-  <script type="text/javascript" src="./js/pc/birth/sliding_bar.js"></script>
-  <script type="text/javascript" src="./js/pc/birth/imageMap.js"></script>
+      // function onFileSelected(event) {
+      //       var selectedFile = event.target.files[0];
+      //       var reader = new FileReader();
+      //           imgtag.title = selectedFile.name;
 
-  <script>
+      //       reader.onload = function(event) {
+      //         imgtag.src = event.target.result;
+      //       };
+      //       reader.readAsDataURL(selectedFile);
+      // }
 
-  var imgtag = document.getElementById("myimage");
-      //Setting Default Image, you can load any image using input box.
-      imgtag.src = "images/pc/birth/all.jpg";
-      imgtag.onload = render;
-
-  var imageMap = d3.imageMap()
-                    .setMode('play')
-                    .setImageSize([512,512]);
-
-  function setMode(_){
-    d3.select(_==='play'?'#slider':'#play').style('background-color','rgb(255, 255, 255)')
-    d3.select('#'+_).style('background-color','rgb(150, 236, 241)')
-    if(_ == 'play')
-      d3.select('#msg').style('display','block');
-    else
-      d3.select('#msg').style('display','none');
-
-    imageMap.setMode(_);
-    render();
-  }
-
-  function onFileSelected(event) {
-        var selectedFile = event.target.files[0];
-        var reader = new FileReader();
-            imgtag.title = selectedFile.name;
-
-        reader.onload = function(event) {
-          imgtag.src = event.target.result;
-        };
-        reader.readAsDataURL(selectedFile);
-  }
-
-  function render(){
-        imageMap.buildCanvas();
-        d3.select('#chart').selectAll('svg').remove();
-        var svg = d3.select('#chart')
-                  .append('svg')
-                  .call(imageMap);
-  }
-  
-  </script>
-
-
-</body></html>
+      function render(){
+            imageMap.buildCanvas();
+            d3.select('#chart').selectAll('svg').remove();
+            var svg = d3.select('#chart')
+                      .append('svg')
+                      .call(imageMap);
+      }
+    </script>
+  </body>
+</html>
