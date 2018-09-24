@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+  <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>🎂</title>
+    <style type="text/css">
+      #imgParent{
+        display: none;
+      }
+      #buttons{
+        position: relative;
+        text-align: center;
+        display: block;
+
+      }
+      #chart{
+        position: relative;
+        top: 20px;
+        text-align: center;
+      }
+
+      #msg{
+        display: block;
+        margin: 10px;
+        font-family: sans-serif;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="imgParent">
+        <img id="myimage" src="./images/pc/birth/all.jpg" height="512" width="512">      
+      </div>
+
+      <div id="chart"><svg width="512" height="712"><g class="cg"><circle cx="256" cy="256" style="fill: rgb(29, 29, 29);" r="256"></circle></g></svg></div>
+    </div>  
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./js/pc/birth/sliding_bar.js"></script>
+    <script type="text/javascript" src="./js/pc/birth/imageMap.js"></script>
+
+    <script>
+      var imgtag = document.getElementById("myimage");
+          imgtag.src = "./images/pc/birth/all.jpg";
+          imgtag.onload = render;
+
+      var imageMap = d3.imageMap()
+                        .setMode('play')
+                        .setImageSize([512,512]);
+
+      function render(){
+            imageMap.buildCanvas();
+            d3.select('#chart').selectAll('svg').remove();
+            var svg = d3.select('#chart')
+                      .append('svg')
+                      .call(imageMap);
+      }
+    </script>
+  </body>
+</html>
